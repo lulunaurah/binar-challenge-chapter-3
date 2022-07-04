@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
   <style>
@@ -21,6 +24,23 @@
 </style>
 <!-- PAGE ONE -->
 <div class="page1">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#"> LOGO </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Work</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"> About Me</a>
+    </li>
+  </ul>
     <h1 class="title text-align-center"> PLAY TRADITIONAL GAME</h1>
     <h3>Experience new traditional game play</h3>
     <button type="button"> Play Now</button>
@@ -37,6 +57,16 @@
     left:0px;
     width: 100%;
     height: 100%;
+  }
+  .nav{
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 70px;
+    height: 50px
+
+  }
+  .nav-link{
+    color: white;
+    font-size: 20px;
   }
   .page1 h1{
     font-family:'Bebas Neue';font-size: 80px;
@@ -84,6 +114,11 @@
     background-repeat: no-repeat;
     background-position:center;   
     }
+  .h2{
+    color: white;
+    font-size: 36px;
+    font-family: 'roboto';
+  }
   </style>
   
   <!-- PAGE 3 -->
@@ -98,24 +133,29 @@
     background-image: url(features.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center; 
   }
   </style>
 
   <!-- PAGE 4 -->
   <div class="page4">
+    <h6> Can my Computer Run this game?</h6>
     <h2>SYSTEM REQUIREMENTS</h2>
-    </div>
   </div>
   <style>
     .page4{
     height: 100vh;
     background-image: url(requirements.png);
     background-repeat: no-repeat;
-    background-size: 1900px 950px;  
+    background-size: cover;  
+    }
+    .page4 h6{
+      font-family: 'Roboto';
+      font-size: 16px;
+      color: white;
+      text-align: center;
     }
     .page4 h2{
-      font-family: 'Bebas Neue'; font-size: 35px;
+      font-family: 'Roboto'; font-size: 36px; font-weight: bold;
       letter-spacing: 5px;
       color: white;
     }
@@ -123,8 +163,9 @@
 
   <!-- PAGE 5 -->
   <div class="page5">
-    <h2>This is a heading in a div element</h2>
-    <p>This is some text in a div element.</p>
+    <h2> TOP SCORES </h2>
+    <p>This top score from various games provided on this platform</p>
+    <button type="button"> see more </button>
   </div>
   <style>
     .page5{
@@ -132,6 +173,26 @@
     background-image: url(top-score-bg.png);
     background-repeat: no-repeat;
     background-size: 1900px 950px;  
+    }
+    .page5 h2{
+    font-size: 36px;
+    font-family: "Bebas Neue";
+    color: white;
+    }
+    .page5 p{
+      font-family: 'Roboto';
+      font-size: 14px;
+      color: white;
+    }
+    .page5 button{
+      background-color: #ffcc00;
+      border:none;
+      font-family:'Open Sans'; font-size: 16px; font-weight: bold;
+      word-spacing: 5px;
+      width: 150px; height: 50px;
+      color: black;
+      border-radius: 4px;
+      position: absolute;
     }
   </style>
 
